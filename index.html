@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NGO homepage">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/my_js.js"></script>
+  <title>ngo homepage</title>
+</head>
+
+<body>
+  <!-- Header Section starts from here-->
+  <header>
+    <div class="bg-image">
+      <div class="bg-1"></div>
+      <div class="bg-1"></div>
+      <div class="bg-1"></div>
+    </div>
+    <div class="nav">
+      <div class="container">
+        <!-- Navbar starts from here -->
+        <nav class="nav__bar">
+          <!-- Logo section -->
+          <a href="#" class="nav__bar--logo">
+            <img src="./images/logo 1.png" alt="logo" width="108" height="44px">
+          </a>
+          <!-- Horizontal list section -->
+          <div class="nav__bar__horizontal_list">
+            <!-- Navigation links -->
+            <ul class="nav__bar__horizontal_list--nav_list">
+              <li><a href="#">Home</a>
+                <ul>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">1</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About us</a>
+                <ul>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">What We Do</a>
+                <ul>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Events</a>
+                <ul>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a>
+                <ul>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav__bar__horizontal_list--close_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="nav__bar__contact_div">
+            <div class="nav__bar__contact_div--logo">
+              <img src="./images/image 1.png" alt="call icon" width="40" height="40">
+            </div>
+            <div class="nav__bar__contact_div--text ">
+              <b>Any questions ?</b>
+              <p>Call: +234 09012346514</p>
+            </div>
+          </div>
+          <a href="#">
+            <div class="btn">
+              Donate
+            </div>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header_content">
+        <div class="header_content__left_div">
+          <h1>Inclusive care for children with special needs</h1>
+          <a href="#">
+            <div class="btn">
+              Discover More
+            </div>
+          </a>
+        </div>
+        <div class="header_content__right_div">
+          <div class="header_content__right_div--content">
+            <b>300+</b>
+            <p>Children die Every Day in Africa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="services">
+      <div class="container">
+        <div class="services__cards">
+          <div class="services__cards--card">
+            <img src="./images/health.png" alt="Healthy food" width="80" height="80">
+            <h4>Healthy Food</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="services__cards--card">
+            <img src="./images/education.png" alt="Education" width="80" height="80">
+            <h4>Education</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="services__cards--card">
+            <img src="./images/water.png" alt="Pure Water" width="80" height="80">
+            <h4>Pure Water</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="services__cards--card">
+            <img src="./images/Layer_1.png" alt="Medical" width="80" height="80">
+            <h4>Medical</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="contact-button">
+        <button id="contactBtn">Contact Us</button>
+        <div class="contact-form">
+          <form id="contactForm" class="display-flex">
+            <div class="close-btn"></div>
+            <h2>Join as a volunteer</h2>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.
+            </h5>
+
+            <div class="name display-flex">
+              <div> <label for="name">FirstName:</label><br>
+                <input type="text" id="FirstName" name="FirstName" required>
+              </div>
+
+              <div><label for="name">LastName:</label>
+                <br>
+                <input type="text" id="LastName" name="LastName" required>
+              </div>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="10" required></textarea><br>
+            </div>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="about_us">
+      <div class="container about_us__div">
+        <div class="about_us__div--left">
+          <img src="images/BG.png" alt="map" width="480" height="578">
+          <div class="state state-1">
+            <div class="style style-1">
+              <p>state 1</p>
+            </div>
+          </div>
+          <div class="state state-2">
+            <div class="style style-2">
+              <p>state 2</p>
+            </div>
+          </div>
+          <div class="state state-3">
+            <div class="style style-3">
+              <p>state 3</p>
+            </div>
+          </div>
+          <div class="state state-4">
+            <div class="style style-4">
+              <p>state 4</p>
+            </div>
+          </div>
+          <div class="state state-5">
+            <div class="style style-5">
+              <p>state 5</p>
+            </div>
+          </div>
+          <div class="state state-6">
+            <div class="style style-6">
+              <p>state 6</p>
+            </div>
+          </div>
+          <div class="state state-7">
+            <div class="style style-7">
+              <p>state 7</p>
+            </div>
+          </div>
+          <div class="state state-8">
+            <div class="style style-8">
+              <p>state 8</p>
+            </div>
+          </div>
+          <div class="state state-9">
+            <div class="style style-9">
+              <p>state 9</p>
+            </div>
+          </div>
+          <div class="state state-10">
+            <div class="style style-10">
+              <p>state 10</p>
+            </div>
+          </div>
+          <div class="state state-11">
+            <div class="style style-11">
+              <p>state 11</p>
+            </div>
+          </div>
+          <div class="heart">
+            <img class="rotating_img" src="images/map-img 1.png" alt="heart animation image" width="162" height="163">
+            <img class="rotating_img_upper_img" src="images/map-img-2.png" alt="heart" width="86" height="91">
+          </div>
+        </div>
+        <div class="about_us__div--right">
+          <div class="about_us__div--right--heading">
+            <p>Know About us</p>
+          </div>
+          <div class="about_us__div--right--info">
+            <h2>We provide a place for children with special needs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.</p>
+            <div class="statistics">
+              <div class="statistics__card">
+                <h3>32m</h3>
+                <p>Total Donations</p>
+              </div>
+              <div class="statistics__card">
+                <h3>40k</h3>
+                <p>Projects Funded</p>
+              </div>
+              <div class="statistics__card">
+                <h3>32k</h3>
+                <p>Statisfied Donors</p>
+              </div>
+              <div class="statistics__card">
+                <h3>230</h3>
+                <p>Volunteers</p>
+              </div>
+            </div>
+            <a href="#">
+              <div class="btn">
+                Discover More
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-Supporters">
+      <div class="container">
+        <div class="our-Supporters__top">
+          <h2>our Supporters</h2>
+        </div>
+        <div class="our-Supporters__bottom">
+          <div><img src="images/Logo.png" alt="Supporters logo " width="136" height="31"></div>
+          <div><img src="images/Logo(1).png" alt="Supporters logo " width="136" height="31"></div>
+          <div><img src="images/Logo(2).png" alt="Supporters logo " width="136" height="31"></div>
+          <div><img src="images/Logo(3).png" alt="Supporters logo " width="136" height="31"></div>
+          <div><img src="images/Logo(4).png" alt="Supporters logo " width="136" height="31"></div>
+          <div><img src="images/Logo(5).png" alt="Supporters logo " width="136" height="31"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects_section">
+      <div class="container projects_div">
+        <h3 class="projects_div--heading">PROJECTS WE HAVE DONE</h3>
+        <p class="projects_div--intropara">Learn the stories of those we've already helped</p>
+        <div class="projects_div__cards">
+          <div class="projects_div__cards--card">
+            <h3 class="projects_div__cards--card__heading">Mission Smile 1k: Outdoor Charity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+              <div class="button">
+                Learn More
+              </div>
+            </a>
+          </div>
+          <div class="projects_div__cards--card">
+            <h3 class="projects_div__cards--card__heading">Weekly excursions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+              <div class="button">
+                Learn More
+              </div>
+            </a>
+          </div>
+          <div class="projects_div__cards--card">
+            <h3 class="projects_div__cards--card__heading">Monthly public awareness</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+              <div class="button">
+                Learn More
+              </div>
+            </a>
+          </div>
+          <div class="projects_div__cards--card">
+            <h3 class="projects_div__cards--card__heading">Weekly excursions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+              <div class="button">
+                Learn More
+              </div>
+            </a>
+          </div>
+          <div class="projects_div__cards--card">
+            <h3 class="projects_div__cards--card__heading">Monthly public awareness</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+              <div class="button">
+                Learn More
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="what_we_do_section">
+      <div class="container">
+        <div class="what_we_do">
+          <div class="what_we_do__text">
+            <p class="heading">What we do</p>
+            <h2>Some services we provide for our children</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.</p>
+            <div class="what_we_do__text--bottom">
+              <h3>Family support</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h3>Health benefits</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h3>Scholarships</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h3>Therapy</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            </div>
+          </div>
+          <div class="what_we_do__image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest_blogs_section">
+      <div class="container">
+        <div class="latest_blogs">
+          <p class="heading">Watch Our Latest Blogs</p>
+          <h2>Check Out Our Latest Blogs</h2>
+          <div class="latest_blogs__cards">
+            <div class="latest_blogs__cards__card">
+              <img src="images/child1.png" alt="latest blogs image 1" width="411" height="410">
+              <div class="latest_blogs__cards__card__text">
+                <div class="latest_blogs__cards__card__text__date">
+                  <p class="bold">10</p>
+                  <p>apr</p>
+                </div>
+                <div class="latest_blogs__cards__card__text__smallinfo">
+                  <div class="Comments">
+                    <p>2 Comments</p>
+                  </div>
+                  <div class="author">
+                    <p>Posted by author</p>
+                  </div>
+                </div>
+                <h3>Online legal advice for asylum seekers in Greece</h3>
+                <a href="#">
+                  <div class="button">
+                    Read More
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="latest_blogs__cards__card">
+              <img src="images/child2.png" alt="latest blogs image 2" width="411" height="410">
+              <div class="latest_blogs__cards__card__text">
+                <div class="latest_blogs__cards__card__text__date">
+                  <p class="bold">10</p>
+                  <p>apr</p>
+                </div>
+                <div class="latest_blogs__cards__card__text__smallinfo">
+                  <div class="Comments">
+                    <p>2 Comments</p>
+                  </div>
+                  <div class="author">
+                    <p>Posted by author</p>
+                  </div>
+                </div>
+                <h3>Online legal advice for asylum seekers in Greece</h3>
+                <a href="#">
+                  <div class="button">
+                    Read More
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="latest_blogs__cards__card">
+              <img src="images/child3.png" alt="latest blogs image 3" width="411" height="410">
+              <div class="latest_blogs__cards__card__text">
+                <div class="latest_blogs__cards__card__text__date">
+                  <p class="bold">10</p>
+                  <p>apr</p>
+                </div>
+                <div class="latest_blogs__cards__card__text__smallinfo">
+                  <div class="Comments">
+                    <p>2 Comments</p>
+                  </div>
+                  <div class="author">
+                    <p>Posted by author</p>
+                  </div>
+                </div>
+                <h3>Online legal advice for asylum seekers in Greece</h3>
+                <a href="#">
+                  <div class="button">
+                    Read More
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial_section">
+      <div class="container">
+        <div class="testimonial">
+          <p class="heading">TESTIMONIAL</p>
+          <h2>Our customer success stories about us</h2>
+          <div class="testimonial__red-block">
+            <div class="state state-1">
+            </div>
+            <div class="state state-2">
+            </div>
+            <div class="state state-3">
+            </div>
+            <div class="state state-4">
+            </div>
+            <div class="state state-5">
+            </div>
+            <div class="state state-6">
+            </div>
+            <div class="state state-7">
+            </div>
+            <div class="state state-8">
+            </div>
+          </div>
+          <div class="testimonial__div">
+            <div class="testimonial__div__left">
+              <div class="img">
+                <img src="images/john.png" alt="Smith Murphy">
+              </div>
+              <p class="bold">Smith Murphy</p>
+              <p>Director</p>
+            </div>
+            <div class="testimonial__div__right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                erat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donate">
+      <div class="container">
+        <div class="donate__div">
+          <h2>You can contribute to provide a place for children with special needs!</h2>
+          <div class="buttons">
+            <a href="#">
+              <div class="btn">
+                join as a volunteer
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="btn1 btn">
+                Donate
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="events">
+      <div class="container">
+        <div class="events__heading">
+          <h2>Our Events</h2>
+        </div>
+        <div class="events__cards">
+
+          <div class="events__cards--card">
+            <div class="date">
+              <h2>10</h2>
+              <p>Dec</p>
+            </div>
+            <div class="top">
+              <p>Next Event</p>
+              <h3>A day with our wonderful children</h3>
+            </div>
+          </div>
+
+          <div class="events__cards--card">
+            <div class="date">
+              <h2>10</h2>
+              <p>Dec</p>
+            </div>
+            <div class="card__content  display-flex">
+              <div class="top">
+                <p>Next Event</p>
+                <h3>A day with our wonderful children</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__content--logo">
+          <img src="./images/logo-1.png" alt="brand logo" width="107" height="44">
+        </div>
+
+        <div class="footer__content__lists">
+          <div class="footer__content__lists__pages">
+            <p>Home</p>
+            <ul>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Blod</a></li>
+            </ul>
+          </div>
+          <div class="footer__content__lists__services">
+            <p>More</p>
+            <ul>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Blod</a></li>
+            </ul>
+          </div>
+          <div class="footer__content__lists__services">
+            <p>Contact</p>
+            <ul>
+              <div class="display-flex">
+                <img src="./images/mail.svg" alt="mail icon" width="18" height="18">
+                <p>info@africanno.com</p>
+              </div>
+              <div class="display-flex">
+                <img src="./images/call.svg" alt="call icon" width="18" height="18">
+                <p>+234 090323430130</p>
+              </div>
+              <div>
+                <p class="mar">Connect</p>
+                <div class="display-flex">
+                  <img src="./images/twitter.svg" alt="twitter" width="17" height="17">
+                  <img src="./images/facebook.svg" alt="facebook" width="24" height="24">
+                  <img src="./images/insta.svg" alt="instagram" width="24" height="24">
+                  <img src="./images/linkedin.svg" alt="linkedin" width="24" height="24">
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__content--bottom">
+          <p>Newsletter</p>
+          <h3>Subscribe to get latest updates</h3>
+          <form action="submit" class="display-flex">
+            <input type="email" placeholder="Your email">
+            <button>subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

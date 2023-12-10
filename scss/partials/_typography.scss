@@ -1,0 +1,19 @@
+// Define font faces using @font-face
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+    font-display: swap;
+}

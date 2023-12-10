@@ -1,0 +1,350 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers"as *;
+
+header {
+    position: relative;
+    height: 802px;
+
+    /* background image */
+    .bg-image {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        .bg-1 {
+            background-image: url(../images/bg-1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 802px;
+
+            @include media($tablet-screen) {
+                background-position: 60%;
+            }
+        }
+    }
+
+    /* Navigation styles */
+    .nav {
+        backdrop-filter: blur(3px);
+
+        @include media($tablet-screen) {
+            background-color: white;
+        }
+
+        &__bar {
+            @include flex-center;
+            justify-content: space-between;
+            padding: 18px 0px;
+            position: relative;
+
+            @include media($tablet-screen) {
+                flex-wrap: wrap;
+                gap: 20px;
+                align-items: normal;
+            }
+
+            &--logo {
+                @include media($tablet-screen) {
+                    width: 30%;
+                }
+            }
+
+            .dropdown {
+                align-items: flex-start;
+                justify-content: space-between !important;
+            }
+
+            &__horizontal_list {
+                @include flex;
+                justify-content: end;
+                align-items: center;
+
+                @include media($tablet-screen) {
+                    width: 60%;
+                }
+
+                .open-2 {
+                    span {
+                        &:nth-child(1) {
+                            transform: rotate(45deg);
+                            top: 15px !important;
+                            left: 0px !important;
+                        }
+
+                        &:nth-child(2) {
+                            width: 0% !important;
+                            opacity: 0 !important;
+                        }
+
+                        &:nth-child(3) {
+                            transform: rotate(-45deg);
+                            top: 15px !important;
+                            left: 0px !important;
+                        }
+                    }
+                }
+
+                &--close_btn {
+                    display: none;
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    transform: rotate(0deg);
+                    transition: .5s ease-in-out;
+                    cursor: pointer;
+
+                    span {
+                        display: block;
+                        position: absolute;
+                        height: 9px;
+                        width: 100%;
+                        background: #B4252D;
+                        border-radius: 9px;
+                        opacity: 1;
+                        left: 0;
+                        transform: rotate(0deg);
+                        transition: .25s ease-in-out;
+
+                        &:nth-child(1) {
+                            top: 0px;
+                        }
+
+                        &:nth-child(2) {
+                            top: 18px;
+                        }
+
+                        &:nth-child(3) {
+                            top: 36px;
+                        }
+                    }
+
+                    @include media($tablet-screen) {
+                        display: block;
+                    }
+                }
+
+                .open {
+                    display: block !important;
+                }
+
+                &--nav_list {
+                    @include flex;
+                    gap: 40px;
+                    transition: display 0.3s ease;
+
+                    @include media($large-screen) {
+                        gap: 15px;
+                        margin: 0 15px;
+                    }
+
+                    @include media($tablet-screen) {
+                        margin: 0;
+                        gap: 40px;
+                    }
+
+                    li {
+                        position: relative;
+                        transition: 1s;
+
+                        a {
+                            color: var(--Secondary-text, #525560);
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        &:hover {
+                            a {
+                                transition: 1s;
+                                color: var(--Black, #0B0706);
+                            }
+
+                            ul {
+                                transition: 1s;
+                                display: block;
+                            }
+                        }
+
+                        ul {
+                            position: absolute;
+                            display: none;
+                            top: 20;
+
+                            li {
+                                padding: 10px 0;
+                                text-align: right;
+
+                                a {
+                                    color: var(--Secondary-text, #525560);
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                        color: var(--Black, #0B0706);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @include media($tablet-screen) {
+                        display: none;
+                        right: 0;
+                        top: 70px;
+                        background-color: white;
+                        gap: 15px;
+                        left: 0;
+
+                        li {
+                            padding: 10px;
+                            margin: 10px;
+                            text-align: center;
+
+                            ul {
+                                position: relative;
+                                top: 0;
+
+                                li {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            &__contact_div {
+                @include flex;
+                gap: 12px;
+
+                @include media($tablet-screen) {
+                    gap: 8px;
+                }
+
+                &--text {
+                    b {
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-bottom: 5px;
+                    }
+
+                    p {
+                        color: #525560;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                    }
+                }
+            }
+
+            .btn {
+                padding: 12px 32px;
+                border-radius: 4px;
+                background: var(--Primary-text, #1D2130);
+                color: white;
+            }
+        }
+    }
+
+    .header_content {
+        display: flex;
+        position: relative;
+        margin-top: 178px;
+
+        @include media($tablet-screen) {
+            margin-top: 40px;
+        }
+        @include media($mobile-screen) {
+            flex-direction: column;
+        }
+
+        &__left_div {
+            display: flex;
+            width: 55%;
+            gap: 48px;
+            flex-direction: column;
+
+            @include media($mobile-screen) {
+                width: 80%;
+            }
+
+            h1 {
+                color: #1D2130;
+                font-family: Roboto;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+
+                @include media($tablet-screen) {
+                    font-size: 50px;
+                }
+            }
+
+            .btn {
+                display: inline-flex;
+                padding: 16px 32px;
+                border-radius: 4px;
+                background: var(--foundation-primary-red-500, #B4252D);
+                backdrop-filter: blur(40px);
+                color: white;
+            }
+        }
+
+        &__right_div {
+            position: absolute;
+            display: flex;
+
+            @include media($my-screen) {
+                right: 25%;
+                bottom: -156%;
+            }
+
+            @include media($extra-large-screen) {
+                right: 30%;
+                bottom: 0%;
+            }
+
+            @include media($tablet-screen) {
+                bottom: -18%;
+                right: 25%;
+            }
+            @include media($mobile-screen) {
+                position: relative;
+                bottom: 0;
+                right: 0;
+                margin-top: 20px;
+            }
+            &--content {
+                display: flex;
+                margin: 0 auto;
+                gap: 19px;
+                flex-direction: column;
+                width: 50%;
+
+                b {
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: Roboto;
+
+                }
+
+                p {
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+}
