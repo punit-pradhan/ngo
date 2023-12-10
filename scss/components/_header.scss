@@ -306,10 +306,12 @@ header {
         &__right_div {
             position: absolute;
             display: flex;
+            bottom: -41%;
+            right: 28%;
 
             @include media($my-screen) {
                 right: 25%;
-                bottom: -156%;
+                bottom: -100px;
             }
 
             @include media($extra-large-screen) {

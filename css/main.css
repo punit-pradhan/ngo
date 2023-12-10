@@ -413,11 +413,13 @@ header .header_content__left_div .btn {
 header .header_content__right_div {
   position: absolute;
   display: flex;
+  bottom: -41%;
+  right: 28%;
 }
 @media screen and (max-width: 1920px) {
   header .header_content__right_div {
     right: 25%;
-    bottom: -156%;
+    bottom: -100px;
   }
 }
 @media screen and (max-width: 1501px) {
@@ -1118,25 +1120,25 @@ main .what_we_do_section .what_we_do__text--bottom h3 {
   position: relative;
 }
 main .what_we_do_section .what_we_do__text--bottom h3:nth-child(1)::before {
-  content: url(../../images/fi-rs-chart-network.svg);
+  content: url(../images/fi-rs-chart-network.svg);
   position: absolute;
   left: -48px;
   top: 3px;
 }
 main .what_we_do_section .what_we_do__text--bottom h3:nth-child(3)::before {
-  content: url(../../images/fi-rs-pharmacy.svg);
+  content: url(../images/fi-rs-pharmacy.svg);
   position: absolute;
   left: -48px;
   top: 3px;
 }
 main .what_we_do_section .what_we_do__text--bottom h3:nth-child(5)::before {
-  content: url(../../images/fi-rs-diploma.svg);
+  content: url(../images/fi-rs-diploma.svg);
   position: absolute;
   left: -48px;
   top: 3px;
 }
 main .what_we_do_section .what_we_do__text--bottom h3:nth-child(7)::before {
-  content: url(../../images/fi-rs-stethoscope.svg);
+  content: url(../images/fi-rs-stethoscope.svg);
   position: absolute;
   left: -48px;
   top: 3px;
@@ -1233,6 +1235,7 @@ main .latest_blogs__cards__card {
 }
 main .latest_blogs__cards__card img {
   border-radius: 20px;
+  width: 100%;
 }
 main .latest_blogs__cards__card h3 {
   font-family: Roboto;

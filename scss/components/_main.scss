@@ -758,7 +758,7 @@ main {
 
                         &:nth-child(1) {
                             &::before {
-                                content: url(../../images/fi-rs-chart-network.svg);
+                                content: url(../images/fi-rs-chart-network.svg);
                                 position: absolute;
                                 left: -48px;
                                 top: 3px;
@@ -767,7 +767,7 @@ main {
 
                         &:nth-child(3) {
                             &::before {
-                                content: url(../../images/fi-rs-pharmacy.svg);
+                                content: url(../images/fi-rs-pharmacy.svg);
                                 position: absolute;
                                 left: -48px;
                                 top: 3px;
@@ -776,7 +776,7 @@ main {
 
                         &:nth-child(5) {
                             &::before {
-                                content: url(../../images/fi-rs-diploma.svg);
+                                content: url(../images/fi-rs-diploma.svg);
                                 position: absolute;
                                 left: -48px;
                                 top: 3px;
@@ -785,7 +785,7 @@ main {
 
                         &:nth-child(7) {
                             &::before {
-                                content: url(../../images/fi-rs-stethoscope.svg);
+                                content: url(../images/fi-rs-stethoscope.svg);
                                 position: absolute;
                                 left: -48px;
                                 top: 3px;
@@ -890,6 +890,7 @@ main {
 
                 img {
                     border-radius: 20px;
+                    width: 100%;
                 }
 
                 h3 {
