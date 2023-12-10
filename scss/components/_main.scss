@@ -337,7 +337,7 @@ main {
                         }
 
                         &::before {
-                            content: url(../images/dot.png);
+                            content: url(../images/dot.webp);
                             position: absolute;
                             left: -24px;
                             top: 2px;
@@ -631,23 +631,23 @@ main {
                     }
 
                     &:nth-child(1) {
-                        background: url(../images/wehavedone-1.png);
+                        background: url(../images/wehavedone-1.webp);
                     }
 
                     &:nth-child(2) {
-                        background: url(../images/wehavedone-2.png);
+                        background: url(../images/wehavedone-2.webp);
                     }
 
                     &:nth-child(3) {
-                        background: url(../images/wehavedone-3.png);
+                        background: url(../images/wehavedone-3.webp);
                     }
 
                     &:nth-child(4) {
-                        background: url(../images/wehavedone-1.png);
+                        background: url(../images/wehavedone-1.webp);
                     }
 
                     &:nth-child(5) {
-                        background: url(../images/wehavedone-2.png);
+                        background: url(../images/wehavedone-2.webp);
                     }
                 }
             }
@@ -733,7 +733,7 @@ main {
                     }
 
                     &::before {
-                        content: url(../images/dot.png);
+                        content: url(../images/dot.webp);
                         position: absolute;
                         left: -24px;
                         top: 1px;
@@ -799,7 +799,7 @@ main {
                 width: 45%;
                 background-repeat: no-repeat !important;
                 background-size: 100%;
-                background: url(../images/servicesimage.png);
+                background: url(../images/servicesimage.webp);
 
                 @include media($tablet-screen) {
                     width: 100%;
@@ -846,7 +846,7 @@ main {
             }
 
             &::before {
-                content: url(../images/dot.png);
+                content: url(../images/dot.webp);
                 position: absolute;
                 left: -24px;
                 top: 2px;
@@ -1008,7 +1008,7 @@ main {
     }
 
     .testimonial {
-        background-image: url('../images/world-map\ 1.png');
+        background-image: url('../images/world-map\ 1.webp');
         margin-left: 96px;
         height: 840px;
         background-repeat: no-repeat;
@@ -1027,8 +1027,8 @@ main {
             position: absolute;
             right: 12%;
             left: 12%;
-            top: 40%;
-            bottom: 17%;
+            top: 32%;
+            bottom: 28%;
             border-radius: 0px 20px;
             z-index: -50;
             border: 1px solid red;
@@ -1145,7 +1145,7 @@ main {
             }
 
             &::before {
-                content: url(../images/dot.png);
+                content: url(../images/dot.webp);
                 position: absolute;
                 left: -24px;
 
@@ -1159,7 +1159,7 @@ main {
             font-style: normal;
             font-weight: 700;
             line-height: 120%;
-            width: 51%;
+            width: 60%;
             margin: 32px 0;
 
             @include media($tablet-screen) {
@@ -1294,7 +1294,7 @@ main {
             padding: 93px 238px;
             color: white;
             background-size: cover;
-            background-image: url('../images/splash.png');
+            background-image: url('../images/splash.webp');
             background-repeat: no-repeat;
 
             @include media($tablet-screen) {
@@ -1350,7 +1350,7 @@ main {
                 &::after {
                     content: "";
                     height: 1px;
-                    width: 79%;
+                    width: 75%;
                     right: 0;
                     top: 50%;
                     color: black;

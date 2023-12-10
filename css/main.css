@@ -153,7 +153,7 @@ header .bg-image {
   left: 0;
 }
 header .bg-image .bg-1 {
-  background-image: url(../images/bg-1.png);
+  background-image: url(../images/bg-1.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 802px;
@@ -752,7 +752,7 @@ main .about_us__div--right--heading p::after {
   background-color: black;
 }
 main .about_us__div--right--heading p::before {
-  content: url(../images/dot.png);
+  content: url(../images/dot.webp);
   position: absolute;
   left: -24px;
   top: 2px;
@@ -1006,19 +1006,19 @@ main .projects_section .projects_div__cards--card::before {
   border-radius: 20px;
 }
 main .projects_section .projects_div__cards--card:nth-child(1) {
-  background: url(../images/wehavedone-1.png);
+  background: url(../images/wehavedone-1.webp);
 }
 main .projects_section .projects_div__cards--card:nth-child(2) {
-  background: url(../images/wehavedone-2.png);
+  background: url(../images/wehavedone-2.webp);
 }
 main .projects_section .projects_div__cards--card:nth-child(3) {
-  background: url(../images/wehavedone-3.png);
+  background: url(../images/wehavedone-3.webp);
 }
 main .projects_section .projects_div__cards--card:nth-child(4) {
-  background: url(../images/wehavedone-1.png);
+  background: url(../images/wehavedone-1.webp);
 }
 main .projects_section .projects_div__cards--card:nth-child(5) {
-  background: url(../images/wehavedone-2.png);
+  background: url(../images/wehavedone-2.webp);
 }
 main .what_we_do_section {
   background-color: #FCF5E8;
@@ -1097,7 +1097,7 @@ main .what_we_do_section .what_we_do__text .heading::after {
   background-color: black;
 }
 main .what_we_do_section .what_we_do__text .heading::before {
-  content: url(../images/dot.png);
+  content: url(../images/dot.webp);
   position: absolute;
   left: -24px;
   top: 1px;
@@ -1145,7 +1145,7 @@ main .what_we_do_section .what_we_do__image {
   width: 45%;
   background-repeat: no-repeat !important;
   background-size: 100%;
-  background: url(../images/servicesimage.png);
+  background: url(../images/servicesimage.webp);
 }
 @media screen and (max-width: 768px) {
   main .what_we_do_section .what_we_do__image {
@@ -1187,7 +1187,7 @@ main .latest_blogs .heading::after {
   background-color: black;
 }
 main .latest_blogs .heading::before {
-  content: url(../images/dot.png);
+  content: url(../images/dot.webp);
   position: absolute;
   left: -24px;
   top: 2px;
@@ -1339,7 +1339,7 @@ main .latest_blogs__cards__card__text__smallinfo .author p::before {
   width: fit-content;
 }
 main .testimonial {
-  background-image: url("../images/world-map 1.png");
+  background-image: url("../images/world-map 1.webp");
   margin-left: 96px;
   height: 840px;
   background-repeat: no-repeat;
@@ -1360,8 +1360,8 @@ main .testimonial__red-block {
   position: absolute;
   right: 12%;
   left: 12%;
-  top: 40%;
-  bottom: 17%;
+  top: 32%;
+  bottom: 28%;
   border-radius: 0px 20px;
   z-index: -50;
   border: 1px solid red;
@@ -1465,7 +1465,7 @@ main .testimonial .heading::after {
   background-color: black;
 }
 main .testimonial .heading::before {
-  content: url(../images/dot.png);
+  content: url(../images/dot.webp);
   position: absolute;
   left: -24px;
 }
@@ -1476,7 +1476,7 @@ main .testimonial h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  width: 51%;
+  width: 60%;
   margin: 32px 0;
 }
 @media screen and (max-width: 768px) {
@@ -1598,7 +1598,7 @@ main .donate__div {
   padding: 93px 238px;
   color: white;
   background-size: cover;
-  background-image: url("../images/splash.png");
+  background-image: url("../images/splash.webp");
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -1650,7 +1650,7 @@ main .events__heading h2 {
 main .events__heading h2::after {
   content: "";
   height: 1px;
-  width: 79%;
+  width: 75%;
   right: 0;
   top: 50%;
   color: black;
@@ -2004,7 +2004,7 @@ input[type=submit] {
   border: none;
 }
 .footer__content__lists {
-  width: 33%;
+  width: 37%;
   display: flex;
   justify-content: space-between;
   /* Styles for the pages and services sections */
