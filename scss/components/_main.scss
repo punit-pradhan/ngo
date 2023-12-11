@@ -34,7 +34,7 @@ main {
                     width: 80%;
                 }
 
-                h4 {
+                .bold {
                     color: var(--Primary-text, #1D2130);
                     text-align: center;
                     font-family: Roboto;
@@ -50,7 +50,7 @@ main {
                     font-family: Roboto;
                     font-size: 12px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 700;
                     line-height: 160%;
                     opacity: 0.6;
                 }
@@ -942,7 +942,7 @@ main {
 
                         .bold {
                             font-size: 40px;
-                            font-weight: 500;
+                            font-weight: 700;
                             line-height: 120%;
                             font-variant: small-caps;
                         }
@@ -952,7 +952,7 @@ main {
                             font-family: Roboto;
                             font-size: 14px;
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 700;
                             line-height: normal;
                             letter-spacing: 2px;
                             text-transform: uppercase;

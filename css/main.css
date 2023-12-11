@@ -494,7 +494,7 @@ main .services .services__cards--card {
     width: 80%;
   }
 }
-main .services .services__cards--card h4 {
+main .services .services__cards--card .bold {
   color: var(--Primary-text, #1D2130);
   text-align: center;
   font-family: Roboto;
@@ -509,7 +509,7 @@ main .services .services__cards--card p {
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 160%;
   opacity: 0.6;
 }
@@ -1283,7 +1283,7 @@ main .latest_blogs__cards__card__text__date {
 }
 main .latest_blogs__cards__card__text__date .bold {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 120%;
   font-variant: small-caps;
 }
@@ -1292,7 +1292,7 @@ main .latest_blogs__cards__card__text__date p {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1914,8 +1914,6 @@ input[type=submit] {
   display: flex;
   justify-content: space-between;
   /* Styles for the lists in the footer */
-  /* Styles for the icon section in the footer */
-  /* Styles for the contact section in the footer */
 }
 @media screen and (max-width: 768px) {
   .footer__content {
@@ -2051,10 +2049,10 @@ input[type=submit] {
   font-family: Roboto;
   font-weight: 400;
 }
-.footer__content__lists__services ul .display-flex {
+.footer__content__lists__services .display-flex {
   gap: 8px;
 }
-.footer__content__lists__services ul .display-flex p {
+.footer__content__lists__services .display-flex p {
   color: white;
   font-family: Roboto;
   font-size: 14px !important;
