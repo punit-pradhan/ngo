@@ -2049,8 +2049,12 @@ input[type=submit] {
   font-family: Roboto;
   font-weight: 400;
 }
+.footer__content__lists__services .bold {
+  margin-bottom: 24px;
+}
 .footer__content__lists__services .display-flex {
   gap: 8px;
+  margin-bottom: 24px;
 }
 .footer__content__lists__services .display-flex p {
   color: white;
