@@ -39,36 +39,6 @@
   }
 }
 
-.flex {
-  display: flex;
-}
-
-.margin-20 {
-  padding: 20px 0;
-}
-
-.default-btn {
-  border-radius: 18px;
-  border: none;
-  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
-  padding: 26px 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 18px !important;
-  color: #FFF !important;
-  font-weight: 600 !important;
-  margin: 0 !important;
-  background-color: #292F36;
-  background: #292F36;
-  width: 225px;
-}
-.default-btn::after {
-  padding-top: 5px;
-  content: url(../images/icons/Vector.svg);
-}
-
 *,
 *::before,
 *::after {
@@ -279,12 +249,11 @@ header .nav__bar__horizontal_list--nav_list li {
   transition: 1s;
 }
 header .nav__bar__horizontal_list--nav_list li a {
-  color: var(--Secondary-text, #525560);
-  font-family: Roboto;
+  color: #525560;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-style: normal;
 }
 header .nav__bar__horizontal_list--nav_list li:hover a {
   transition: 1s;
@@ -342,20 +311,20 @@ header .nav__bar__contact_div {
   }
 }
 header .nav__bar__contact_div--text b {
-  font-family: Roboto;
+  color: #525560;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-style: normal;
   margin-bottom: 5px;
 }
 header .nav__bar__contact_div--text p {
   color: #525560;
-  font-family: Roboto;
+  color: #525560;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-style: normal;
 }
 header .nav__bar .btn {
   padding: 12px 32px;
@@ -391,11 +360,11 @@ header .header_content__left_div {
 }
 header .header_content__left_div h1 {
   color: #1D2130;
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
 }
 @media screen and (max-width: 768px) {
   header .header_content__left_div h1 {
@@ -450,9 +419,10 @@ header .header_content__right_div--content {
   width: 50%;
 }
 header .header_content__right_div--content b {
+  color: #1D2130;
   font-size: 24px;
   font-weight: 700;
-  font-family: Roboto;
+  line-height: normal;
 }
 header .header_content__right_div--content p {
   line-height: 160%;
@@ -495,22 +465,20 @@ main .services .services__cards--card {
   }
 }
 main .services .services__cards--card .bold {
-  color: var(--Primary-text, #1D2130);
   text-align: center;
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 160%;
+  font-style: normal;
 }
 main .services .services__cards--card p {
-  color: var(--Primary-text, #1D2130);
-  text-align: center;
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 12px;
-  font-style: normal;
   font-weight: 700;
   line-height: 160%;
+  text-align: center;
+  font-style: normal;
   opacity: 0.6;
 }
 main .about_us {
@@ -706,10 +674,10 @@ main .about_us__div--left .heart .rotating_img_upper_img {
 }
 @media screen and (max-width: 576px) {
   main .about_us__div--left .heart .rotating_img_upper_img {
-    top: 22px;
-    left: 22px;
-    width: 70px;
-    height: 70px;
+    top: 12px;
+    left: 14px;
+    width: 86px;
+    height: 91px;
   }
 }
 main .about_us__div--right {
@@ -729,11 +697,11 @@ main .about_us__div--right {
 }
 main .about_us__div--right--heading p {
   position: relative;
-  font-family: Roboto;
+  color: #000000;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -761,20 +729,18 @@ main .about_us__div--right--heading p::before {
 }
 main .about_us__div--right--info h2 {
   color: #525560;
-  font-family: Roboto;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
   margin: 20px 0;
 }
 main .about_us__div--right--info p {
-  font-family: Roboto;
   color: #525560;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  font-style: normal;
   margin: 20px 0;
 }
 main .about_us__div--right--info .statistics {
@@ -842,12 +808,11 @@ main .our-Supporters__top::after {
   }
 }
 main .our-Supporters__top h2 {
-  font-family: Roboto;
   color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 34px;
@@ -879,12 +844,11 @@ main .projects_section {
   overflow: hidden;
 }
 main .projects_section .projects_div--heading {
-  color: var(--Primary-text, #1D2130);
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-left: 96px;
@@ -903,12 +867,11 @@ main .projects_section .projects_div--heading::before {
   background-color: black;
 }
 main .projects_section .projects_div--intropara {
-  color: var(--Primary-text, #1D2130);
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
   width: 50%;
   margin-left: 96px;
 }
@@ -964,26 +927,20 @@ main .projects_section .projects_div__cards--card:last-child {
 main .projects_section .projects_div__cards--card p {
   position: relative;
   z-index: 999;
-  color: #FFF;
-  /* Paragraph */
-  font-family: Roboto;
+  color: #fff;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  /* 25.6px */
+  font-style: normal;
 }
 main .projects_section .projects_div__cards--card__heading {
   z-index: 999;
   position: relative;
-  color: #FFF;
-  /* H3 */
-  font-family: Roboto;
+  color: #fff;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  /* 42px */
+  font-style: normal;
 }
 main .projects_section .projects_div__cards--card .button {
   position: relative;
@@ -1056,27 +1013,25 @@ main .what_we_do_section .what_we_do__text {
   }
 }
 main .what_we_do_section .what_we_do__text h2 {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 48px;
-  font-style: normal;
-  color: var(--Primary-text, #1D2130);
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
   margin-bottom: 10px;
 }
 main .what_we_do_section .what_we_do__text p {
-  font-family: Roboto;
+  color: #525560;
   font-size: 16px;
-  color: var(--Secondary-text, #525560);
-  font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  font-style: normal;
   margin-bottom: 24px;
 }
 main .what_we_do_section .what_we_do__text .heading {
-  font-family: Roboto;
+  color: #1D2130;
+  font-size: 16px;
   font-weight: 700;
-  color: var(--Primary-text, #1D2130);
   line-height: normal;
   letter-spacing: 2px;
   margin-bottom: 32px;
@@ -1110,12 +1065,11 @@ main .what_we_do_section .what_we_do__text--bottom {
   border-left: 1px solid #E5E5E5;
 }
 main .what_we_do_section .what_we_do__text--bottom h3 {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 24px;
-  color: var(--Primary-text, #1D2130);
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-style: normal;
   margin-bottom: 8px;
   position: relative;
 }
@@ -1157,13 +1111,12 @@ main .what_we_do_section .what_we_do__image {
   }
 }
 main .latest_blogs .heading {
-  font-family: Roboto;
-  margin-left: 96px;
-  color: var(--Primary-text, #1D2130);
+  color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-left: 96px;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -1196,11 +1149,11 @@ main .latest_blogs .heading::before {
 }
 main .latest_blogs h2 {
   margin-left: 96px;
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
   margin-bottom: 55px;
 }
 @media screen and (max-width: 576px) {
@@ -1238,11 +1191,11 @@ main .latest_blogs__cards__card img {
   width: 100%;
 }
 main .latest_blogs__cards__card h3 {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  font-style: normal;
 }
 main .latest_blogs__cards__card .button {
   padding: 16px 32px;
@@ -1263,12 +1216,11 @@ main .latest_blogs__cards__card__text {
   border-radius: 10px;
 }
 main .latest_blogs__cards__card__text h3 {
-  color: var(--Primary-text, #1D2130);
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  font-style: normal;
   margin-bottom: 25px;
 }
 main .latest_blogs__cards__card__text__date {
@@ -1282,18 +1234,18 @@ main .latest_blogs__cards__card__text__date {
   width: fit-content;
 }
 main .latest_blogs__cards__card__text__date .bold {
+  color: #fff;
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
   font-variant: small-caps;
 }
 main .latest_blogs__cards__card__text__date p {
-  color: #FFF;
-  font-family: Roboto;
+  color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -1309,15 +1261,15 @@ main .latest_blogs__cards__card__text__smallinfo .Comments {
   padding: 5px;
 }
 main .latest_blogs__cards__card__text__smallinfo .Comments p {
-  font-family: Roboto;
+  color: #525560;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
   font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-weight: 400;
-  line-height: 160%;
 }
 main .latest_blogs__cards__card__text__smallinfo .Comments p::before {
   content: url("../images/fi-rr-comments.svg");
@@ -1327,15 +1279,15 @@ main .latest_blogs__cards__card__text__smallinfo .author {
   padding: 5px;
 }
 main .latest_blogs__cards__card__text__smallinfo .author p {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-style: normal;
   gap: 10px;
-  font-weight: 400;
-  line-height: 160%;
 }
 main .latest_blogs__cards__card__text__smallinfo .author p::before {
   content: url("../images/fi-rr-man-head.svg");
@@ -1441,12 +1393,11 @@ main .testimonial__red-block .state-8 {
   background-color: #B4252D;
 }
 main .testimonial .heading {
-  font-family: Roboto;
-  color: var(--Primary-text, #1D2130);
+  color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
@@ -1473,12 +1424,11 @@ main .testimonial .heading::before {
   left: -24px;
 }
 main .testimonial h2 {
-  font-family: Roboto;
-  color: var(--Primary-text, #1D2130);
+  color: #1D2130;
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
   width: 60%;
   margin: 32px 0;
 }
@@ -1536,23 +1486,21 @@ main .testimonial__div__left img {
   border-radius: 20px;
 }
 main .testimonial__div__left p {
-  font-family: Roboto;
-  color: var(--Primary-text, #1D2130);
+  color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 main .testimonial__div__left .bold {
-  font-family: Roboto;
-  color: var(--Primary-text, #1D2130);
+  color: #1D2130;
   font-size: 28px;
-  margin-top: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  margin-top: 20px;
+  font-style: normal;
 }
 main .testimonial__div__left::after {
   position: absolute;
@@ -1587,12 +1535,11 @@ main .testimonial__div__right {
   }
 }
 main .testimonial__div__right p {
-  font-family: Roboto;
+  color: #525560;
   font-size: 14px;
-  font-style: normal;
-  color: var(--Secondary-text, #525560);
   font-weight: 400;
   line-height: 160%;
+  font-style: normal;
   padding-bottom: 20px;
 }
 main .donate__div {
@@ -1615,12 +1562,12 @@ main .donate__div {
   }
 }
 main .donate__div h2 {
-  font-family: Roboto;
+  color: white;
   font-size: 44px;
-  text-align: center;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  text-align: center;
+  font-style: normal;
 }
 main .donate__div .buttons {
   display: flex;
@@ -1641,12 +1588,11 @@ main .donate__div .buttons .btn1 {
   color: black;
 }
 main .events__heading h2 {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 48px;
-  color: var(--Primary-text, #1D2130);
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-style: normal;
   margin-bottom: 60px;
   position: relative;
 }
@@ -1681,7 +1627,6 @@ main .events__cards--card {
   border-radius: 20px;
   background: var(--foundation-text-color-text-color-50, #E8E9EA);
   display: flex;
-  color: var(--Primary-text, #1D2130);
   width: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -1710,18 +1655,19 @@ main .events__cards--card .date {
   }
 }
 main .events__cards--card .date h2 {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 48px;
-  font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  font-style: normal;
   font-variant: small-caps;
 }
 main .events__cards--card .date p {
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
+  line-height: normal;
+  font-style: normal;
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1735,12 +1681,11 @@ main .events__cards--card .top {
   }
 }
 main .events__cards--card .top p {
-  color: var(--Primary-text, #1D2130);
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -1759,12 +1704,11 @@ main .events__cards--card .top p::after {
 }
 main .events__cards--card .top h3 {
   display: flex;
-  color: var(--Primary-text, #1D2130);
-  font-family: Roboto;
+  color: #1D2130;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  font-style: normal;
 }
 @media screen and (max-width: 768px) {
   main .events__cards--card .top h3 {
@@ -1802,12 +1746,13 @@ main .events__cards--card .top h3::after {
   padding: 16px 32px;
   position: absolute;
   right: 0;
+  color: #fff;
   font-size: 16px;
-  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
   border-radius: 4px;
   background: var(--foundation-primary-red-500, #B4252D);
   backdrop-filter: blur(40px);
-  color: white;
 }
 
 .contact-form {
@@ -1891,12 +1836,13 @@ input[type=submit] {
   width: max-content;
   padding: 16px 32px;
   border-radius: 4px;
-  border: none;
+  color: #fff;
   font-size: 16px;
-  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
   background: var(--foundation-primary-red-500, #B4252D);
   backdrop-filter: blur(40px);
-  color: white;
 }
 
 .display-flex {
@@ -1941,12 +1887,11 @@ input[type=submit] {
   }
 }
 .footer__content--bottom p {
-  color: var(--foundation-text-color-text-color-50, #E8E9EA);
-  font-family: Roboto;
+  color: #E8E9EA;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
@@ -1964,12 +1909,11 @@ input[type=submit] {
 }
 .footer__content--bottom h3 {
   margin-top: 13px;
-  color: var(--foundation-text-color-text-color-50, #E8E9EA);
-  font-family: Roboto;
+  color: #E8E9EA;
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 140%;
+  font-style: normal;
   margin-bottom: 34px;
 }
 .footer__content--bottom form {
@@ -1981,11 +1925,10 @@ input[type=submit] {
   padding: 22px 130px 23px 24px;
   background: black;
   color: rgba(235, 240, 249, 0.3);
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-style: normal;
   border-radius: 4px;
   border: 1px solid rgba(235, 240, 249, 0.3);
 }
@@ -2028,13 +1971,12 @@ input[type=submit] {
   }
 }
 .footer__content__lists__pages p, .footer__content__lists__services p {
-  color: #FFF;
-  font-family: Roboto;
+  color: #fff;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  word-break: break-all;
   line-height: 160%;
+  font-style: normal;
+  word-break: break-all;
 }
 .footer__content__lists__pages ul, .footer__content__lists__services ul {
   margin-top: 24px;
@@ -2046,8 +1988,8 @@ input[type=submit] {
 .footer__content__lists__pages ul li a, .footer__content__lists__services ul li a {
   color: white;
   font-size: 14px;
-  font-family: Roboto;
   font-weight: 400;
+  line-height: normal;
 }
 .footer__content__lists__services .bold {
   margin-bottom: 24px;
@@ -2058,11 +2000,10 @@ input[type=submit] {
 }
 .footer__content__lists__services .display-flex p {
   color: white;
-  font-family: Roboto;
   font-size: 14px !important;
-  font-style: normal;
   font-weight: 400 !important;
   line-height: 160%;
+  font-style: normal;
 }
 
 .mar {

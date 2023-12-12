@@ -35,23 +35,15 @@ main {
                 }
 
                 .bold {
-                    color: var(--Primary-text, #1D2130);
                     text-align: center;
-                    font-family: Roboto;
-                    font-size: 20px;
+                    @include text-styles(#1D2130, 20px, 500, 160%);
                     font-style: normal;
-                    font-weight: 500;
-                    line-height: 160%;
                 }
 
                 p {
-                    color: var(--Primary-text, #1D2130);
+                    @include text-styles(#1D2130, 12px, 700, 160%);
                     text-align: center;
-                    font-family: Roboto;
-                    font-size: 12px;
                     font-style: normal;
-                    font-weight: 700;
-                    line-height: 160%;
                     opacity: 0.6;
                 }
             }
@@ -283,10 +275,10 @@ main {
                         z-index: 1;
 
                         @include media($mobile-screen) {
-                            top: 22px;
-                            left: 22px;
-                            width: 70px;
-                            height: 70px;
+                            top: 12px;
+                            left: 14px;
+                            width: 86px;
+                            height: 91px;
                         }
                     }
                 }
@@ -308,11 +300,8 @@ main {
                 &--heading {
                     p {
                         position: relative;
-                        font-family: Roboto;
-                        font-size: 16px;
+                @include text-styles(#000000, 16px, 700, normal);
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
                         letter-spacing: 2px;
                         text-transform: uppercase;
 
@@ -348,22 +337,14 @@ main {
 
                 &--info {
                     h2 {
-                        color: #525560;
-                        font-family: Roboto;
-                        font-size: 48px;
+                        @include text-styles(#525560, 48px, 700, 120%);
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 120%;
                         margin: 20px 0;
                     }
 
                     p {
-                        font-family: Roboto;
-                        color: #525560;
-                        font-size: 16px;
+                        @include text-styles(#525560, 16px, 400, 160%);
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: 160%;
                         margin: 20px 0;
                     }
 
@@ -445,12 +426,8 @@ main {
             }
 
             h2 {
-                font-family: Roboto;
-                color: #1D2130;
-                font-size: 16px;
+                @include text-styles(#1D2130, 16px, 500, normal);
                 font-style: normal;
-                font-weight: 500;
-                line-height: normal;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 margin-bottom: 34px;
@@ -487,12 +464,8 @@ main {
 
         .projects_div {
             &--heading {
-                color: var(--Primary-text, #1D2130);
-                font-family: Roboto;
-                font-size: 16px;
+                @include text-styles(#1D2130, 16px, 700, normal);
                 font-style: normal;
-                font-weight: 700;
-                line-height: normal;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 margin-left: 96px;
@@ -513,13 +486,8 @@ main {
             }
 
             &--intropara {
-                color: var(--Primary-text, #1D2130);
-                font-family: Roboto;
-                font-size: 48px;
+                @include text-styles(#1D2130, 48px, 700, 120%);
                 font-style: normal;
-                font-weight: 700;
-                line-height: 120%;
-
                 width: 50%;
                 margin-left: 96px;
 
@@ -581,29 +549,15 @@ main {
                     & p {
                         position: relative;
                         z-index: 999;
-                        color: #FFF;
-
-                        /* Paragraph */
-                        font-family: Roboto;
-                        font-size: 16px;
+                        @include text-styles(#fff, 16px, 400, 160%);
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: 160%;
-                        /* 25.6px */
                     }
 
                     &__heading {
                         z-index: 999;
                         position: relative;
-                        color: #FFF;
-
-                        /* H3 */
-                        font-family: Roboto;
-                        font-size: 28px;
+                        @include text-styles(#fff, 28px, 700, 150%);
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 150%;
-                        /* 42px */
                     }
 
                     .button {
@@ -684,30 +638,19 @@ main {
                 }
 
                 h2 {
-                    font-family: Roboto;
-                    font-size: 48px;
+                    @include text-styles(#1D2130, 48px, 700, 120%);
                     font-style: normal;
-                    color: var(--Primary-text, #1D2130);
-                    font-weight: 700;
-                    line-height: 120%;
                     margin-bottom: 10px;
                 }
 
                 p {
-                    font-family: Roboto;
-                    font-size: 16px;
-                    color: var(--Secondary-text, #525560);
+                    @include text-styles(#525560, 16px, 400, 160%);
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 160%;
                     margin-bottom: 24px;
                 }
 
                 .heading {
-                    font-family: Roboto;
-                    font-weight: 700;
-                    color: var(--Primary-text, #1D2130);
-                    line-height: normal;
+                    @include text-styles(#1D2130, 16px, 700, normal);
                     letter-spacing: 2px;
                     margin-bottom: 32px;
                     position: relative;
@@ -747,12 +690,8 @@ main {
                     border-left: 1px solid #E5E5E5;
 
                     h3 {
-                        font-family: Roboto;
-                        font-size: 24px;
-                        color: var(--Primary-text, #1D2130);
+                        @include text-styles(#1D2130, 24px, 700, normal);
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
                         margin-bottom: 8px;
                         position: relative;
 
@@ -812,13 +751,9 @@ main {
 
     .latest_blogs {
         .heading {
-            font-family: Roboto;
+            @include text-styles(#1D2130, 16px, 700, normal);
             margin-left: 96px;
-            color: var(--Primary-text, #1D2130);
-            font-size: 16px;
             font-style: normal;
-            font-weight: 700;
-            line-height: normal;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 32px;
@@ -855,11 +790,8 @@ main {
 
         h2 {
             margin-left: 96px;
-            font-family: Roboto;
-            font-size: 48px;
+            @include text-styles(#1D2130, 48px, 700, 120%);
             font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
             margin-bottom: 55px;
 
             @include media($mobile-screen) {
@@ -894,11 +826,8 @@ main {
                 }
 
                 h3 {
-                    font-family: Roboto;
-                    font-size: 20px;
+                    @include text-styles(#1D2130, 20px, 700, 150%);
                     font-style: normal;
-                    font-weight: 700;
-                    line-height: 150%;
                 }
 
                 .button {
@@ -921,12 +850,8 @@ main {
                     border-radius: 10px;
 
                     h3 {
-                        color: var(--Primary-text, #1D2130);
-                        font-family: Roboto;
-                        font-size: 20px;
+                        @include text-styles(#1D2130, 20px, 700, 150%);
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 150%;
                         margin-bottom: 25px;
                     }
 
@@ -941,19 +866,13 @@ main {
                         width: fit-content;
 
                         .bold {
-                            font-size: 40px;
-                            font-weight: 700;
-                            line-height: 120%;
+                            @include text-styles(#fff, 40px, 700, 120%);
                             font-variant: small-caps;
                         }
 
                         p {
-                            color: #FFF;
-                            font-family: Roboto;
-                            font-size: 14px;
+                            @include text-styles(#fff, 14px, 700, normal);
                             font-style: normal;
-                            font-weight: 700;
-                            line-height: normal;
                             letter-spacing: 2px;
                             text-transform: uppercase;
                         }
@@ -969,13 +888,10 @@ main {
                             padding: 5px;
 
                             p {
-                                font-family: Roboto;
-                                font-size: 12px;
+                                @include text-styles(#525560, 12px, 400, 160%);
                                 font-style: normal;
                                 @include flex-center;
                                 gap: 10px;
-                                font-weight: 400;
-                                line-height: 160%;
 
                                 &::before {
                                     content: url("../images/fi-rr-comments.svg");
@@ -988,13 +904,10 @@ main {
                             padding: 5px;
 
                             p {
-                                font-family: Roboto;
-                                font-size: 12px;
+                                @include text-styles(#1D2130, 12px, 400, 160%);
                                 @include flex-center;
                                 font-style: normal;
                                 gap: 10px;
-                                font-weight: 400;
-                                line-height: 160%;
 
                                 &::before {
                                     content: url("../images/fi-rr-man-head.svg");
@@ -1115,12 +1028,8 @@ main {
         }
 
         .heading {
-            font-family: Roboto;
-            color: var(--Primary-text, #1D2130);
-            font-size: 16px;
+            @include text-styles(#1D2130, 16px, 700, normal);
             font-style: normal;
-            font-weight: 700;
-            line-height: normal;
             letter-spacing: 2px;
             text-transform: uppercase;
             position: relative;
@@ -1154,12 +1063,8 @@ main {
         }
 
         h2 {
-            font-family: Roboto;
-            color: var(--Primary-text, #1D2130);
-            font-size: 56px;
+            @include text-styles(#1D2130, 56px, 700, 120%);
             font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
             width: 60%;
             margin: 32px 0;
 
@@ -1220,24 +1125,16 @@ main {
                 }
 
                 p {
-                    font-family: Roboto;
-                    color: var(--Primary-text, #1D2130);
-                    font-size: 16px;
+                    @include text-styles(#1D2130, 16px, 500, normal);
                     font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
                     letter-spacing: 2px;
                     text-transform: uppercase;
                 }
 
                 .bold {
-                    font-family: Roboto;
-                    color: var(--Primary-text, #1D2130);
-                    font-size: 28px;
+                    @include text-styles(#1D2130, 28px, 700, 150%);
                     margin-top: 20px;
                     font-style: normal;
-                    font-weight: 700;
-                    line-height: 150%;
                 }
 
                 &::after {
@@ -1276,12 +1173,8 @@ main {
                 }
 
                 p {
-                    font-family: Roboto;
-                    font-size: 14px;
+                    @include text-styles(#525560, 14px, 400, 160%);
                     font-style: normal;
-                    color: var(--Secondary-text, #525560);
-                    font-weight: 400;
-                    line-height: 160%;
                     padding-bottom: 20px;
                 }
             }
@@ -1307,12 +1200,9 @@ main {
             }
 
             h2 {
-                font-family: Roboto;
-                font-size: 44px;
+                @include text-styles(white, 44px, 700, 120%);
                 text-align: center;
                 font-style: normal;
-                font-weight: 700;
-                line-height: 120%;
             }
 
             .buttons {
@@ -1339,12 +1229,8 @@ main {
     .events {
         &__heading {
             h2 {
-                font-family: Roboto;
-                font-size: 48px;
-                color: var(--Primary-text, #1D2130);
+                @include text-styles(#1D2130, 48px, 700, 120%);
                 font-style: normal;
-                font-weight: 700;
-                line-height: 120%;
                 margin-bottom: 60px;
                 position: relative;
 
@@ -1380,7 +1266,6 @@ main {
                 border-radius: 20px;
                 background: var(--foundation-text-color-text-color-50, #E8E9EA);
                 display: flex;
-                color: var(--Primary-text, #1D2130);
                 width: 50%;
 
                 @include media($tablet-screen) {
@@ -1406,19 +1291,14 @@ main {
                     }
 
                     h2 {
-                        font-family: Roboto;
-                        font-size: 48px;
+                        @include text-styles(#1D2130, 48px, 500, 120%);
                         font-style: normal;
-                        font-weight: 500;
-                        line-height: 120%;
                         font-variant: small-caps;
                     }
 
                     p {
-                        font-family: Roboto;
-                        font-size: 16px;
+                        @include text-styles(#1D2130, 16px, 500, normal);
                         font-style: normal;
-                        font-weight: 500;
                         line-height: normal;
                         letter-spacing: 2px;
                         text-transform: uppercase;
@@ -1434,12 +1314,8 @@ main {
                     }
 
                     p {
-                        color: var(--Primary-text, #1D2130);
-                        font-family: Roboto;
-                        font-size: 16px;
+                        @include text-styles(#1D2130, 16px, 500, normal);
                         font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
                         letter-spacing: 2px;
                         text-transform: uppercase;
                         margin-bottom: 8px;
@@ -1460,12 +1336,8 @@ main {
 
                     h3 {
                         display: flex;
-                        color: var(--Primary-text, #1D2130);
-                        font-family: Roboto;
-                        font-size: 28px;
+                        @include text-styles(#1D2130, 28px, 700, 150%);
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 150%;
 
                         @include media($tablet-screen) {
                             gap: 20px;
@@ -1507,12 +1379,10 @@ main {
         padding: 16px 32px;
         position: absolute;
         right: 0;
-        font-size: 16px;
-        font-family: Roboto;
+        @include text-styles(#fff, 16px, 500, normal);
         border-radius: 4px;
         background: var(--foundation-primary-red-500, #B4252D);
         backdrop-filter: blur(40px);
-        color: white;
 
     }
 }
@@ -1606,12 +1476,10 @@ input[type="submit"] {
     width: max-content;
     padding: 16px 32px;
     border-radius: 4px;
+    @include text-styles(#fff, 16px, 500, normal);
     border: none;
-    font-size: 16px;
-    font-family: Roboto;
     background: var(--foundation-primary-red-500, #B4252D);
     backdrop-filter: blur(40px);
-    color: white;
 }
 
 .display-flex {

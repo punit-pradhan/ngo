@@ -150,12 +150,8 @@ header {
                         transition: 1s;
 
                         a {
-                            color: var(--Secondary-text, #525560);
-                            font-family: Roboto;
-                            font-size: 16px;
+                            @include text-styles(#525560, 16px, 500, normal);
                             font-style: normal;
-                            font-weight: 500;
-                            line-height: normal;
                         }
 
                         &:hover {
@@ -229,21 +225,15 @@ header {
 
                 &--text {
                     b {
-                        font-family: Roboto;
-                        font-size: 16px;
+                        @include text-styles(#525560, 16px, 500, normal);
                         font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
                         margin-bottom: 5px;
                     }
 
                     p {
                         color: #525560;
-                        font-family: Roboto;
-                        font-size: 14px;
+                        @include text-styles(#525560, 14px, 400, normal);
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
 
                     }
                 }
@@ -266,6 +256,7 @@ header {
         @include media($tablet-screen) {
             margin-top: 40px;
         }
+
         @include media($mobile-screen) {
             flex-direction: column;
         }
@@ -282,11 +273,8 @@ header {
 
             h1 {
                 color: #1D2130;
-                font-family: Roboto;
-                font-size: 64px;
+                @include text-styles(#1D2130, 64px, 700, 120%);
                 font-style: normal;
-                font-weight: 700;
-                line-height: 120%;
 
                 @include media($tablet-screen) {
                     font-size: 50px;
@@ -323,12 +311,14 @@ header {
                 bottom: -18%;
                 right: 25%;
             }
+
             @include media($mobile-screen) {
                 position: relative;
                 bottom: 0;
                 right: 0;
                 margin-top: 20px;
             }
+
             &--content {
                 display: flex;
                 margin: 0 auto;
@@ -337,9 +327,7 @@ header {
                 width: 50%;
 
                 b {
-                    font-size: 24px;
-                    font-weight: 700;
-                    font-family: Roboto;
+                @include text-styles(#1D2130, 24px, 700, normal);
 
                 }
 
