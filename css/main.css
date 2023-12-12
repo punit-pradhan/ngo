@@ -910,6 +910,11 @@ main .projects_section .projects_div__cards .slick-list {
     height: auto;
   }
 }
+@media screen and (max-width: 576px) {
+  main .projects_section .projects_div__cards .slick-list {
+    overflow: hidden !important;
+  }
+}
 main .projects_section .projects_div__cards .slick-list .slick-track {
   display: flex;
   gap: 24px;
@@ -1454,7 +1459,7 @@ main .testimonial__div {
   }
 }
 main .testimonial__div::after {
-  content: url(../images/Arrow\ button.svg);
+  content: url(../images/Arrow-button.svg);
   box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 50%;
@@ -1463,7 +1468,7 @@ main .testimonial__div::after {
 }
 main .testimonial__div::before {
   box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.1);
-  content: url(../images/Arrow\ button1.svg);
+  content: url(../images/Arrow-button1.svg);
   position: absolute;
   top: 50%;
   border-radius: 50%;
@@ -1542,7 +1547,7 @@ main .testimonial__div__right p {
   font-style: normal;
   padding-bottom: 20px;
 }
-main .donate__div {
+main .volunteer__div {
   border-radius: 20px;
   margin-bottom: 58px;
   padding: 93px 238px;
@@ -1552,16 +1557,16 @@ main .donate__div {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
-  main .donate__div {
+  main .volunteer__div {
     padding: 90px 20px;
   }
 }
 @media screen and (max-width: 576px) {
-  main .donate__div {
+  main .volunteer__div {
     padding: 40px 20px;
   }
 }
-main .donate__div h2 {
+main .volunteer__div h2 {
   color: white;
   font-size: 44px;
   font-weight: 700;
@@ -1569,21 +1574,21 @@ main .donate__div h2 {
   text-align: center;
   font-style: normal;
 }
-main .donate__div .buttons {
+main .volunteer__div .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
 }
-main .donate__div .buttons .btn {
+main .volunteer__div .buttons .btn {
   padding: 16px 32px;
   border-radius: 4px;
   background: var(--foundation-primary-red-500, #B4252D);
   backdrop-filter: blur(40px);
   color: white;
 }
-main .donate__div .buttons .btn1 {
+main .volunteer__div .buttons .btn1 {
   background: white;
   color: black;
 }
@@ -1728,8 +1733,8 @@ main .events__cards--card .top h3::after {
 /* CSS for positioning the contact button and form */
 .contact-button {
   position: fixed;
-  bottom: 12%;
-  right: -10px;
+  bottom: 50%;
+  right: 0px;
   display: none;
   width: 100%;
   z-index: 9999;
@@ -1737,7 +1742,7 @@ main .events__cards--card .top h3::after {
 }
 @media screen and (max-width: 768px) {
   .contact-button {
-    bottom: 50%;
+    bottom: 12%;
   }
 }
 .contact-button #contactBtn {
@@ -1760,7 +1765,7 @@ main .events__cards--card .top h3::after {
   width: 640px;
   height: 684px;
   position: absolute;
-  bottom: 50px;
+  bottom: -200px;
   right: 45px;
   background: #fff;
   padding: 48px;
@@ -1769,7 +1774,7 @@ main .events__cards--card .top h3::after {
 }
 @media screen and (max-width: 768px) {
   .contact-form {
-    bottom: -350px;
+    bottom: 0px;
     height: max-content;
     width: 80%;
   }

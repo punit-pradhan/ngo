@@ -300,7 +300,7 @@ main {
                 &--heading {
                     p {
                         position: relative;
-                @include text-styles(#000000, 16px, 700, normal);
+                        @include text-styles(#000000, 16px, 700, normal);
                         font-style: normal;
                         letter-spacing: 2px;
                         text-transform: uppercase;
@@ -526,6 +526,10 @@ main {
 
                     @include media($tablet-screen) {
                         height: auto;
+                    }
+
+                    @include media($mobile-screen) {
+                        overflow: hidden !important;
                     }
 
                     .slick-track {
@@ -761,7 +765,6 @@ main {
 
             @include media($mobile-screen) {
                 margin-left: 0;
-
                 &::after,
                 &::before {
                     display: none;
@@ -1090,7 +1093,7 @@ main {
             }
 
             &::after {
-                content: url(../images/Arrow\ button.svg);
+                content: url(../images/Arrow-button.svg);
                 box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.10);
                 position: absolute;
                 top: 50%;
@@ -1100,7 +1103,7 @@ main {
 
             &::before {
                 box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.10);
-                content: url(../images/Arrow\ button1.svg);
+                content: url(../images/Arrow-button1.svg);
                 position: absolute;
                 top: 50%;
                 border-radius: 50%;
@@ -1181,7 +1184,7 @@ main {
         }
     }
 
-    .donate {
+    .volunteer {
         &__div {
             border-radius: 20px;
             margin-bottom: 58px;
@@ -1361,15 +1364,15 @@ main {
 /* CSS for positioning the contact button and form */
 .contact-button {
     position: fixed;
-    bottom: 12%;
-    right: -10px;
+    bottom: 50%;
+    right: 0px;
     display: none;
     width: 100%;
     z-index: 9999;
     border: none;
 
     @include media($tablet-screen) {
-        bottom: 50%;
+        bottom: 12%;
     }
 
     // transform: rotate(90deg);
@@ -1388,12 +1391,11 @@ main {
 }
 
 .contact-form {
-    // transform: origin(90degre);
     display: none;
     width: 640px;
     height: 684px;
     position: absolute;
-    bottom: 50px;
+    bottom: -200px;
     right: 45px;
     background: #fff;
     padding: 48px;
@@ -1401,7 +1403,7 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
     @include media($tablet-screen) {
-        bottom: -350px;
+        bottom: 0px;
         height: max-content;
         width: 80%;
     }
