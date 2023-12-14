@@ -39,6 +39,28 @@
   }
 }
 
+.display-flex {
+  display: flex;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  color: black !important;
+  font-size: 30px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.slick-next {
+  z-index: 55 !important;
+  right: 10px !important;
+}
+
+.slick-prev {
+  z-index: 55 !important;
+  left: 10px !important;
+}
+
 *,
 *::before,
 *::after {
@@ -116,11 +138,14 @@ header {
 }
 header .bg-image {
   position: absolute;
-  z-index: -1;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+header .bg-image .slick-next,
+header .bg-image .slick-prev {
+  top: 50% !important;
 }
 header .bg-image .bg-1 {
   background-image: url(../images/bg-1.webp);
@@ -886,20 +911,7 @@ main .projects_section .projects_div__cards {
 }
 main .projects_section .projects_div__cards .slick-next,
 main .projects_section .projects_div__cards .slick-prev {
-  top: -30px;
-}
-main .projects_section .projects_div__cards .slick-next::before,
-main .projects_section .projects_div__cards .slick-prev::before {
-  color: black;
-  font-size: 30px;
-  width: auto;
-  height: auto;
-}
-main .projects_section .projects_div__cards .slick-next {
-  right: 0;
-}
-main .projects_section .projects_div__cards .slick-prev {
-  left: 0;
+  top: -30px !important;
 }
 main .projects_section .projects_div__cards .slick-list {
   display: flex;
@@ -1724,7 +1736,7 @@ main .events__cards--card .top h3 {
   }
 }
 main .events__cards--card .top h3::after {
-  content: url("../../images/Arrow button.svg");
+  content: url("../../images/Arrow-button.svg");
   border-radius: 50%;
   width: 56px;
   height: 56px;
@@ -1772,26 +1784,7 @@ main .events__cards--card .top h3::after {
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 768px) {
-  .contact-form {
-    bottom: 0px;
-    height: max-content;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .contact-form {
-    width: 100%;
-    right: 0;
-    left: 0;
-  }
-}
-.contact-form form {
-  flex-direction: column;
-  gap: 32px;
-  position: relative;
-}
-.contact-form form .close-btn {
+.contact-form .close-btn {
   display: block;
   height: 2px;
   position: relative;
@@ -1800,7 +1793,7 @@ main .events__cards--card .top h3::after {
   width: 18px;
   right: -100%;
 }
-.contact-form form .close-btn::before, .contact-form form .close-btn::after {
+.contact-form .close-btn::before, .contact-form .close-btn::after {
   background: #333;
   content: "";
   display: block;
@@ -1809,11 +1802,28 @@ main .events__cards--card .top h3::after {
   transition: all 0.2s ease-out;
   width: 100%;
 }
-.contact-form form .close-btn::before {
+.contact-form .close-btn::before {
   transform: rotate(-45deg);
 }
-.contact-form form .close-btn::after {
+.contact-form .close-btn::after {
   transform: rotate(45deg);
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    bottom: 0px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact-form {
+    width: 90%;
+    right: 0;
+    left: 0;
+  }
+}
+.contact-form form {
+  flex-direction: column;
+  gap: 32px;
 }
 .contact-form .name {
   gap: 24px;
@@ -1850,8 +1860,32 @@ input[type=submit] {
   backdrop-filter: blur(40px);
 }
 
+.thankyou {
+  display: none;
+}
+
 .display-flex {
   display: flex;
+}
+
+.slick-next,
+.slick-prev {
+  top: 50%;
+}
+.slick-next::before,
+.slick-prev::before {
+  color: black;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
 }
 
 .footer {

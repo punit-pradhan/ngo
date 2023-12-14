@@ -23,3 +23,28 @@
         max-width: 100%;
     }
 }
+
+.display-flex {
+    display: flex;
+}
+
+.slick-next,
+.slick-prev {
+
+    &::before {
+        color: black !important;
+        font-size: 30px !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+.slick-next {
+    z-index:55 !important;
+    right: 10px !important;
+}
+
+.slick-prev {
+    z-index: 55 !important;
+    left: 10px !important;
+}

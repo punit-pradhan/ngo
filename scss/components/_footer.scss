@@ -151,7 +151,7 @@
                     margin-bottom: 24px;
 
                     p {
-                @include text-styles(white, 14px !important, 400 !important, 160%);
+                        @include text-styles(white, 14px !important, 400 !important, 160%);
                         font-style: normal;
                     }
                 }

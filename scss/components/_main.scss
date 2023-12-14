@@ -502,23 +502,8 @@ main {
 
                 .slick-next,
                 .slick-prev {
-                    top: -30px;
-
-                    &::before {
-                        color: black;
-                        font-size: 30px;
-                        width: auto;
-                        height: auto;
+                    top: -30px !important;
                     }
-                }
-
-                .slick-next {
-                    right: 0;
-                }
-
-                .slick-prev {
-                    left: 0;
-                }
 
                 .slick-list {
                     display: flex;
@@ -765,6 +750,7 @@ main {
 
             @include media($mobile-screen) {
                 margin-left: 0;
+
                 &::after,
                 &::before {
                     display: none;
@@ -1348,7 +1334,7 @@ main {
                         }
 
                         &::after {
-                            content: url('../../images/Arrow\ button.svg');
+                            content: url('../../images/Arrow-button.svg');
                             border-radius: 50%;
                             width: 56px;
                             height: 56px;
@@ -1402,14 +1388,42 @@ main {
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
+    .close-btn {
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        background: transparent;
+        width: 18px;
+        right: -100%;
+
+        &::before,
+        &::after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+
     @include media($tablet-screen) {
         bottom: 0px;
-        height: max-content;
         width: 80%;
     }
 
     @include media($mobile-screen) {
-        width: 100%;
+        width: 90%;
         right: 0;
         left: 0;
     }
@@ -1417,36 +1431,6 @@ main {
     form {
         flex-direction: column;
         gap: 32px;
-        position: relative;
-
-        .close-btn {
-            display: block;
-            height: 2px;
-            position: relative;
-            transition: background .2s ease-out;
-            background: transparent;
-            width: 18px;
-            right: -100%;
-
-            &::before,
-            &::after {
-                background: #333;
-                content: '';
-                display: block;
-                height: 100%;
-                position: absolute;
-                transition: all .2s ease-out;
-                width: 100%;
-            }
-
-            &::before {
-                transform: rotate(-45deg);
-            }
-
-            &::after {
-                transform: rotate(45deg);
-            }
-        }
     }
 
     .name {
@@ -1484,6 +1468,30 @@ input[type="submit"] {
     backdrop-filter: blur(40px);
 }
 
+.thankyou {
+    display: none;
+}
+
 .display-flex {
     display: flex;
+}
+
+.slick-next,
+.slick-prev {
+    top: 50%;
+
+    &::before {
+        color: black;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
 }

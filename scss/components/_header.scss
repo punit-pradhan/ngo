@@ -8,12 +8,14 @@ header {
     /* background image */
     .bg-image {
         position: absolute;
-        z-index: -1;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-
+        .slick-next,
+        .slick-prev {
+            top: 50% !important;
+        }
         .bg-1 {
             background-image: url(../images/bg-1.webp);
             background-size: cover;
